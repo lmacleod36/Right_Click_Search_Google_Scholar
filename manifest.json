@@ -1,16 +1,29 @@
 {
+  //Required Fields
   "name": "Search Google Scholar",
-  "description": "Search for selected text on Google Scholar",
   "version": "0.0.1",
   "manifest_version": 2,
+  
+  //Good-to-have basics
+  "default_locale": "en",
+  "description": "Search for selected text on Google Scholar",
+  "icons": {
+    "16": "img/globalGoogle16.png",
+    "48": "img/globalGoogle48.png",
+   "128": "img/globalGoogle128.png"
+  },
+
+// Others
   "permissions": ["contextMenus", "tabs"],
   "background": {
     "scripts": [ "src/scripts.js"],
     "persistent": false
   },
-  "icons": {
-   "16": "img/globalGoogle16.png",
-   "48": "img/globalGoogle48.png",
-  "128": "img/globalGoogle128.png"
- }
+  "chrome_ui_overrides": {
+    "bookmarks_ui": {
+      "remove_bookmark_shortcut": true,
+      "remove_button": true
+    }
+  },
+  "offline_enabled": false,
 }
