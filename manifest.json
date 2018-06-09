@@ -1,0 +1,16 @@
+{
+  "name": "Search Google Scholar",
+  "description": "Search for selected text on Google Scholar",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": ["contextMenus", "tabs"],
+  "background": {
+    "scripts": [ "src/scripts.js"],
+    "persistent": false
+  },
+  "icons": {
+   "16": "img/globalGoogle16.png",
+   "48": "img/globalGoogle48.png",
+  "128": "img/globalGoogle128.png"
+ }
+}
