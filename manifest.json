@@ -1,11 +1,8 @@
 {
-  //Required Fields
   "name": "Search Google Scholar",
   "version": "0.0.1",
   "manifest_version": 2,
   
-  //Good-to-have basics
-  "default_locale": "en",
   "description": "Search for selected text on Google Scholar",
   "icons": {
     "16": "img/globalGoogle16.png",
@@ -13,7 +10,6 @@
    "128": "img/globalGoogle128.png"
   },
 
-// Others
   "permissions": ["contextMenus", "tabs"],
   "background": {
     "scripts": [ "src/scripts.js"],
@@ -25,5 +21,5 @@
       "remove_button": true
     }
   },
-  "offline_enabled": false,
+  "offline_enabled": false
 }
